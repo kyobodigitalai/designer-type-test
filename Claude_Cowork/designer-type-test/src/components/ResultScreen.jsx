@@ -15,7 +15,7 @@ export default function ResultScreen({ resultType, onRestart }) {
         padding: '40px 24px',
       }}
     >
-      {/* 이미지 자리 */}
+      {/* 이미지 */}
       <FlexBox
         alignItems="center"
         justifyContent="center"
@@ -25,10 +25,18 @@ export default function ResultScreen({ resultType, onRestart }) {
           borderRadius: '24px',
           backgroundColor: 'var(--montage-color-background-secondary, #f7f7f8)',
           marginBottom: '32px',
-          fontSize: '80px',
+          overflow: 'hidden',
         }}
       >
-        {result.emoji}
+        {result.image ? (
+          <img
+            src={result.image}
+            alt={result.name}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        ) : (
+          <span style={{ fontSize: '80px' }}>{result.emoji}</span>
+        )}
       </FlexBox>
 
       {/* 유형 이름 */}

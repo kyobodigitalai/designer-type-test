@@ -1,6 +1,11 @@
+import explorerImg from '../assets/explorer.png'
+import executorImg from '../assets/executor.png'
+import thinkerImg from '../assets/thinker.png'
+
 export const results = {
   explorer: {
     emoji: '🔍',
+    image: explorerImg,
     name: '탐험가형',
     subtitle: '남들이 가지 않은 길을 먼저 걷는 디자이너',
     description:
@@ -9,6 +14,7 @@ export const results = {
   },
   executor: {
     emoji: '⚡',
+    image: executorImg,
     name: '실행가형',
     subtitle: '만들고 → 보고 → 고치는 걸 반복하는 디자이너',
     description:
@@ -17,6 +23,7 @@ export const results = {
   },
   thinker: {
     emoji: '🌱',
+    image: thinkerImg,
     name: '사색가형',
     subtitle: '맥락과 의미를 충분히 고민한 뒤 시작하는 디자이너',
     description:

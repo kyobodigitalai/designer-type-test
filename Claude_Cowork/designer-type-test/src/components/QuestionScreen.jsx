@@ -49,11 +49,11 @@ export default function QuestionScreen({ currentIndex, onAnswer, onBack }) {
       {/* 질문 */}
       <FlexBox
         flexDirection="column"
-        justifyContent="center"
-        sx={{ flex: 1, padding: '48px 24px 32px' }}
+        justifyContent="flex-start"
+        sx={{ flex: 1, padding: '32px 24px 32px' }}
       >
         <Typography
-          variant="heading2"
+          variant="title3"
           weight="bold"
           sx={{ marginBottom: '40px', lineHeight: '1.5' }}
         >

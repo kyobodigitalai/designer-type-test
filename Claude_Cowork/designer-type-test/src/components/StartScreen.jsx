@@ -20,7 +20,7 @@ export default function StartScreen({ onStart }) {
         align="center"
         sx={{ marginBottom: '12px' }}
       >
-        나는 어떤 디자이너일까?
+        나는 어떤 유형의 디자이너일까?
       </Typography>
 
       <Typography
@@ -60,6 +60,7 @@ export default function StartScreen({ onStart }) {
         size="large"
         fullWidth
         onClick={onStart}
+        sx={{ backgroundColor: '#0077FF', '&:hover': { backgroundColor: '#005FCC' } }}
       >
         테스트 시작하기
       </Button>

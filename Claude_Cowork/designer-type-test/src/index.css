@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: var(--montage-color-background-primary, #ffffff);
   -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
 }
 
 #root {
